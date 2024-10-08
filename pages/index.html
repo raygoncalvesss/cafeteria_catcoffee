@@ -3,31 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria Cat Coffee</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Cafeteria Cat Coffee</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cardápio.html">Cardápio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+    <header class="site-header">
+        <div class="nav-image">
+            <img src="/img/logocatcoffee.jpeg" alt="">
+            <h1 class="nav-title">Cafeteria Cat Coffee</h1>
+        </div>
+        <nav class="main-nav">
+            <p class="nav-item"><a href="/pages/index.html">Home</a></p>
+            <p class="nav-item"><a href="/pages/cardápio.html">Cardápio</a></p>
+            <p class="nav-item"><a href="/pages/contato.html">Contato</a></p>
         </nav>
     </header>
 
-    <main>
-        <section id="Home">
-            <h2>Bem-vindo ao Cat Coffee</h2>
-            <p>Um lugar aconchegante para você apreciar um café de qualidade e deliciosas guloseimas.</p>
-            <img src="imagem" alt="Imagem da Cafeteria" />
-        </section>
+    <main class="main-content">
+        <h1 class="main-title">Menu</h1>
+        <p class="introduction-text">Descubra as delícias mais irresistíveis da nossa cafeteria!</p>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Cafeteria Cat Coffee | Todos os nossos direitos reservados.</p>
+    <h1 class="section-title">Mais Vendidos</h1>
+
+    <section class="menu-sections">
+        <div class="card">
+            <img src="/img/cafe.jpg" alt="">
+            <img src="/img/cafeexpresso.jpg" alt="">
+            <div class="intro">
+                <h1>Café Expresso</h1>
+                <p class="descricao">O <span class="nome">Café Expresso</span> é uma das bebidas mais deliciosas que você pode tomar para iniciar com o pé direito o seu dia <span class="price">R$5.00</span></p>            
+            </div>
+                <br>
+                <br>
+                Endereço: <br>
+                Rua das Acácias, 45 <br>
+                Jardim São Marcos <br>
+                Valinhos - SP, 13274-000
+            </p>
+        </div>
+        <br>
+        <br>
+    </main>
+
+    <footer class="site-footer">
+        <div class="authors">
+            <address class="contact-info-vitor">
+                <p class="author-name">
+                    Autor: <span class="name">Vitor Argeri</span>
+                </p>
+                <p class="author-email">
+                    Email: <a href="mailto:vitor.argeri@aluno.senai.br" class="email-link">vitor.argeri@aluno.senai.br</a>
+                </p>
+            </address>
+            <address class="contact-info-bruno">
+                <p class="author-name">
+                    Autor: <span class="name">Vitor Argeri</span>
+                    Autor: <span class="name">Bruno Quintino</span>
+                </p>
+                <p class="author-email">
+                    Email: <a href="mailto:vitor.argeri@aluno.senai.br" class="email-link">vitor.argeri@aluno.senai.br</a>
+                    Email: <a href="mailto:bruno.quintino@aluno.senai.br" class="email-link">bruno.quintino@aluno.senai.br</a>
+                </p>
+            </address>
+        </div>
+        <p class="copy-info">&copy; 2024 - Todos os direitos reservados</p>
     </footer>
+
 </body>
 </html>
