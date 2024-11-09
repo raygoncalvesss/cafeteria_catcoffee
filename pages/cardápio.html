@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cardápio - Cat Coffee</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/cardápio.css">
 </head>
+
 <body>
-    <header>
-        <h1>Cat Coffee</h1>
-        <nav>
+    <header class="site-header">
+        <div class="nav-image">
+            <img src="../img/logocatcoffee.jpeg" alt="Logo Cafeteria Cat Coffee" title="Cafeteria Cat Coffee">
+            <h1 class="nav-title">Cafeteria Cat Coffee</h1>
+        </div>
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cardápio.html">Cardápio</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li class="nav-item"><a href="index.html" title="Página inicial">Home</a></li>
+                <li class="nav-item"><a href="cardápio.html" title="Confira nosso cardápio">Cardápio</a></li>
+                <li class="nav-item"><a href="contato.html" title="Entre em contato conosco">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -21,30 +26,93 @@
     <main>
         <section id="Menu">
             <h2>Nosso Cardápio</h2>
+
             <h3>Bebidas</h3>
-            <ul>
-                <li>Café Espresso - R$ 5,00</li>
-                <li>Cappuccino - R$ 8,00</li>
-                <li>Latte - R$ 7,00</li>
-                <li>Chá Gelado - R$ 6,00</li>
-                <li>Suco Natural - R$ 6,50</li>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <span>Café Espresso - R$ 5,00</span>
+                    <a href="#">
+                        <img src="../img/cafe-expresso.jpg" alt="Café Espresso" title="Café Espresso">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Cappuccino - R$ 8,00</span>
+                    <a href="#">
+                        <img src="../img/cappuccino-cat.jpg" alt="Cappuccino" title="Cappuccino">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Latte - R$ 7,00</span>
+                    <a href="#">
+                        <img src="../img/latte.jpg" alt="Latte" title="Latte">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Chá Gelado - R$ 6,00</span>
+                    <a href="#">
+                        <img src="../img/cha-gelado.jpg" alt="Chá Gelado" title="Chá Gelado">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Sucos Naturais - R$ 6,50</span>
+                    <a href="#">
+                        <img src="../img/sucos-naturais.jpg" alt="Sucos Naturais" title="Sucos Naturais">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Água - R$ 6,00</span>
+                    <a href="#">
+                        <img src="../img/agua.jpg" alt="Água" title="Água">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Refrigerantes - R$ 6,00</span>
+                    <a href="#">
+                        <img src="../img/refrigerantes.jpg" alt="Refrigerantes" title="Refrigerantes">
+                    </a>
+                </li>
             </ul>
 
-
             <h3>Comidas</h3>
-            <ul>
-                <li>Bolo de Cenoura - R$ 10,00</li>
-                <li>Torrada com Avocado - R$ 12,00</li>
-                <li>Sanduíche Natural - R$ 15,00</li>
-                <li>Cookie de Chocolate - R$ 6,00</li>
-                <li>Croissant - R$ 9,00</li>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <span>Bolo de Cenoura - R$ 10,00</span>
+                    <a href="#">
+                        <img src="../img/bolo-de-cenoura.jpg" alt="Bolo de Cenoura" title="Bolo de Cenoura">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Torrada com Avocado - R$ 12,00</span>
+                    <a href="#">
+                        <img src="../img/torrada-com-avocado.jpg" alt="Torrada com Avocado" title="Torrada com Avocado">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Sanduíche Natural - R$ 15,00</span>
+                    <a href="#">
+                        <img src="../img/sanduiche.jpg" alt="Sanduíche Natural" title="Sanduíche Natural">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Cookie de Chocolate - R$ 6,00</span>
+                    <a href="#">
+                        <img src="../img/cookie-de-chocolate.jpg" alt="Cookie de Chocolate" title="Cookie de Chocolate">
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <span>Croissant - R$ 9,00</span>
+                    <a href="#">
+                        <img src="../img/croissant.jpg" alt="Croissant" title="Croissant">
+                    </a>
+                </li>
             </ul>
         </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2024 Cafeteria Cat Coffee | Todos os nossos direitos reservados.</p>
     </footer>
-    
+
 </body>
+
 </html>

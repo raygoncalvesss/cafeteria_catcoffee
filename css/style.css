@@ -1,52 +1,176 @@
-.main-nav {
-    flex-direction: column;
+/* Resetando alguns estilos padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte padrão e cor de fundo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Estilos para o cabeçalho */
+.site-header {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 1vh 40vh;
-    margin: 1vh 31.25vh;
-    background-color:saddlebrown
+    flex-wrap: wrap;
+    padding: 10px 20px;
 }
 
-.site-footer {
-    text-align: center;
-    font-size: 2vh;
-    margin-top: 3vh;
-    border-top: 0.25vh solid var(--color-black);
-    background-color: var(--color-footer-bg);
-    margin-top: -2vh;
-}
-.author-Vitor,
-.author-Bruno,
-.copy-info, 
-.email-Vitor,
-.email-Bruno {
-    margin-top: 1vh;
-    font-size: 1.3vh;
-    color: var(--color-footer-text);
-}
-.main-title {
-    font-size: 6vh;
+.nav-image {
+    display: flex;
+    align-items: center;
 }
 
+.nav-image img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.nav-title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #332a13;
+}
+
+/* Estilos para o conteúdo principal */
+.main-content {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introduction-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+.introduction-text br {
+    margin-bottom: 15px;
+}
+
+/* Estilo para o link do Google Maps */
+a {
+    color: #3a3a3a;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0f0e0960;
+}
+
+/* Estilo para o rodapé */
 .site-footer {
+    background-color: #3a3a3a;
+    color: #fff;
     text-align: center;
-    font-size: 2vh;
-    margin-top: 3vh;
-    border-top: 0.25vh solid var(--color-black);
-    background-color: var(--color-footer-bg);
-    margin-top: 2vh;
-    width: 768px;
+    padding: 20px 0;
 }
-.author-Vitor,
-.author-Bruno,
-.copy-info, 
-.email-Vitor,
-.email-Bruno {
-    margin-left: -20vh;
-    margin-top: 1vh;
-    font-size: 1.5vh;
-    color: var(--color-footer-text);
+
+.authors {
+    margin-bottom: 20px;
 }
-.author-Bruno,
-.email-Bruno {
-    margin-left: -30vh;
+
+.contact-info-bruno {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.author-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.author-email {
+    font-size: 16px;
+    color: #bbb;
+}
+
+.email-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: #ffffff50;
+}
+
+.copy-info {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-nav {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .main-content {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .introduction-text {
+        font-size: 16px;
+    }
+
+    .authors {
+        font-size: 14px;
+    }
+
+    .author-name,
+    .author-email {
+        font-size: 14px;
+    }
 }

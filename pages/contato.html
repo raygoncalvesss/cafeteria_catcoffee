@@ -1,48 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Cafeteria Cat Coffee</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../css/contato.css">
 </head>
+
 <body>
-    <header>
-        <h1>Cat Coffee</h1>
-        <nav>
+    <header class="site-header">
+        <div class="nav-image">
+            <img src="../img/logocatcoffee.jpeg" alt="Logo Cafeteria Cat Coffee" title="Cafeteria Cat Coffee">
+            <h1 class="nav-title">Cafeteria Cat Coffee</h1>
+        </div>
+        <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cardápio.html">Cardápio</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li class="nav-item"><a href="index.html" title="Página inicial">Home</a></li>
+                <li class="nav-item"><a href="cardápio.html" title="Confira nosso cardápio">Cardápio</a></li>
+                <li class="nav-item"><a href="contato.html" title="Entre em contato conosco">Contato</a></li>
             </ul>
         </nav>
-
     </header>
 
-    <main>
+    <main class="main-content">
         <section id="Contato">
             <h2>Entre em Contato</h2>
-            <p>Endereço: Rua da Felicidade, 123 - Centro, Perolândia</p>
-            <form action="mailto:cafeteria.cat.coffee@gmail.com" method="post" enctype="text/plain">
+
+            <p class="contact-description">
+                Se você tiver alguma dúvida ou sugestão, fique à vontade para nos enviar uma mensagem. Estamos prontos para
+                atendê-lo!
+            </p>
+
+            <form action="mailto:cafeteria.cat.coffee@gmail.com" method="post" enctype="text/plain" class="contact-form">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email">
 
-                <label for="email">Mensagem:</label>
-                <input type="mensagem" id="mensagem" name="mensagem" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem"></textarea>
 
-                <button type="submit">Enviar</button>
-
+                <button type="submit" class="submit-btn">Enviar</button>
             </form>
-            <p><a href="https://www.google.com.br/maps/@-48.696038,71.4944884,6.64z?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Veja nossa localização no Google Maps</a></p>
+
+            <p class="contact-info">
+                <strong>Endereço:</strong> Rua da Felicidade, 123 - Centro, Perolândia
+            </p>
+            <p><a href="https://www.google.com.br/maps/@-48.696038,71.4944884,6.64z?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" title="Ver nossa localização no Google Maps">Veja nossa localização no Google Maps</a></p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Cafeteria Cat Coffee | Todos os nossos direitos reservados.</p>
+    <footer class="site-footer">
+        <p>&copy; 2024 Cafeteria Cat Coffee | Todos os direitos reservados.</p>
     </footer>
-    
+
 </body>
+
 </html>
